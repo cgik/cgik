@@ -1,16 +1,8 @@
 syntax enable
 
-if $COLORTERM == 'gnome-terminal'
-  set t_Co=256
-endif
-
-try
-  colorscheme morning
-catch
-endtry
-
 set number
-set paste
+set relativenumber
+set ts=2
 
 set tabstop=2
 set shiftwidth=2
@@ -24,3 +16,7 @@ set tw=500
 set ai
 set si
 set wrap
+
+let mapleader = ","
+nmap <leader>w :w!<cr>
+nmap <leader>pv :Ex<cr>
