@@ -16,6 +16,12 @@
   author-position: left,
   personal-info-position: left,
 )
+== Summary
+My bread and butter, and the thing that makes the biggest impact of value for the company is designing a release process that works for everyone in the company, 
+and I do mean everyone. A good release process can make or break a company's costs in head count, technical debt and business and developer satisfaction. I also
+am a big fan of keeping things simply to allow for maximum flexibility, I'm very tool agnostic and happy to learn and become an expert in anything that makes sense
+for the company to succeed.
+
 == Skills
 - *Programming Languages:* TypeScript, JavaScript, Python, Go, Bash
 - *Technologies:* ECS, Kubernetes, Terraform, CI/CD, Github Actions, Linux, DataDog, Observability, AWS, RDS, S3, CloudFront
