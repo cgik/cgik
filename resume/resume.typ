@@ -27,7 +27,7 @@ for the company to succeed.
 #work(
   title: "DevOps Production Engineer",
   location: "California (remote)",
-  company: "Axonius"
+  company: "Axonius",
   dates: dates-helper(start-date: "May 2025")
 )
 - Migrated our TeamCity CI/CD off a legacy AWS to a new one.
