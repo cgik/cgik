@@ -19,13 +19,8 @@
 == Summary
 My bread and butter, and the thing that makes the biggest impact of value for the company is designing a release process that works for everyone in the company, 
 and I do mean everyone. A good release process can make or break a company's costs in head count, technical debt and business and developer satisfaction. I also
-am a big fan of keeping things simply to allow for maximum flexibility, I'm very tool agnostic and happy to learn and become an expert in anything that makes sense
+am a big fan of keeping things simply to allow for maximum flexibility, I'm very tool agnostic and have a good track record of becoming an expert in anything that makes sense
 for the company to succeed.
-
-== Skills
-- *Programming Languages:* TypeScript, JavaScript, Python, Go, Bash
-- *Technologies:* ECS, Kubernetes, Terraform, CI/CD, Github Actions, Linux, DataDog, Observability, AWS, RDS, S3, CloudFront
-- *Other:* Cloud Cost Management, Environment & Application Architecture, SOC, SOC2, SOX, Vendor Management
 
 == Work Experience
 
@@ -35,7 +30,9 @@ for the company to succeed.
   company: "Axonius"
   dates: dates-helper(start-date: "May 2025")
 )
-- Ongoing!
+- Migrated our TeamCity CI/CD off a legacy AWS to a new one.
+- Redesigned our Federal CI/CD process 
+- *Technologies*: TeamCity, AWX, Ansible, Linux, Python, Bash, IAM, Terraform, FedRamp
 
 #work(
   title: "Staff Platform Engineer",
@@ -43,13 +40,13 @@ for the company to succeed.
   company: "Grubmarket",
   dates: dates-helper(start-date: "Jun 2022", end-date: "Nov 2024"),
 )
-- Ground up implemented and architected from zero observability to full observability with DataDog, reducing customer resolutions from days to before they notice something is wrong with alerting.
-- Went from manual deployments and in-repository secrets to fully automated deployments with no failure rate and secrets management.
+- Introduced observability with DataDog, went from customers alerting us about something being wrong to proactively fixing things.
+- Went from manual deployments and in-repository secrets to fully automated deployments and secrets management, also moved from nothing to Terraform for everything in our infrastructure.
 - Implemented just-in-time and passwordless access to both our data and AWS environments.
-- Migrated legacy infrastructure to modern AWS ECS architecture and Fargate so there were no more manual interventions for down time while reducing costs by 25%.
+- Migrated legacy infrastructure to modern AWS ECS architecture and Fargate, keeping things simple for a small team.
 - Worked cross-internal company to meet security needs for SOC2 and streamline, securing our applications and IP.
-- Directly worked with engineering to improve and simplify our technology stack's reliability and scalability, implement multi-tenancy and identity management system in Java.
 - Migrated MySQL 5.7 to MySQL 8 zero downtime, no customer interruption.
+- *Technologies*: ECS, Github Actions, Java, RDS, IAM, S3, DataDog, CloudFront, Terraform
 
 #work(
   title: "Senior DevOps Engineer",
@@ -61,6 +58,7 @@ for the company to succeed.
 - Managed the architecture team's technical work to meet and exceed deadlines and requirements.
 - Designed our implementation for Kubernetes (EKS).
 - Worked alongside Data & AI team to design and introduce our own AI product (pre-GPT).
+- *Technologies*: Kubernetes, Ansible, Jenkins, Linux, Python
 
 #work(
   title: "DevOps Engineer",
