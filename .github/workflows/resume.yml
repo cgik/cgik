@@ -26,7 +26,7 @@ jobs:
         with:
           name: PDF
           path: |
-            resume.pdf
+            resume/resume.pdf
 
       - name: Get current date
         id: date
@@ -39,4 +39,4 @@ jobs:
           DATE: ${{ env.DATE }}
         with:
           name: "${{ github.ref_name }} — ${{ env.DATE }}"
-          files: resume.pdf
+          files: resume/resume.pdf
