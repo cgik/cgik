@@ -52,7 +52,7 @@ for the company to succeed.
   title: "Senior DevOps Engineer",
   location: "San Francisco, CA (remote)",
   company: "Oportun",
-  dates: dates-helper(start-date: "Mar 2020", end-date: "Jun 2022"),
+  dates: dates-helper(start-date: "Jun 2017", end-date: "Jun 2022"),
 )
 - Lead the architecture review meeting for cross-team collaboration and new initiatives.
 - Managed the architecture team's technical work to meet and exceed deadlines and requirements.
@@ -60,22 +60,12 @@ for the company to succeed.
 - Worked alongside Data & AI team to design and introduce our own AI product (pre-GPT).
 - *Technologies*: Kubernetes, Ansible, Jenkins, Linux, Python
 
-#work(
-  title: "DevOps Engineer",
-  location: "San Francisco, CA (remote)",
-  company: "Oportun",
-  dates: dates-helper(start-date: "Sep 2018", end-date: "Mar 2020"),
-)
+*DevOps Engineer* Oct 18 - Mar 2020
 - Migrated applications from on-prem to AWS, improving existing automation 
 - Created disaster recovery environment with failover playbook.
 - Migrated key environments within our AWS account to reduce costs by 20%.
 
-#work(
-  title: "Jr DevOps Engineer",
-  location: "San Francisco, CA (remote)",
-  company: "Oportun",
-  dates: dates-helper(start-date: "Jun 2017", end-date: "Oct 2018"),
-)
+*Jr. DevOps Engineer* Jun 17 - Oct 18
 - Worked with development team to introduce new applications, meet security and scalability requirements.
 - Coordinated production deployments and releases between product and engineering teams.
 - Improved our Ansible and Jenkins managed development environment, consisting of 400+ EC2 instances, reduced AWS costs by 15% with architectural changes.
