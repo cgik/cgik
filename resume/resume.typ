@@ -30,8 +30,9 @@ for the company to succeed.
   company: "Axonius",
   dates: dates-helper(start-date: "May 2025")
 )
-- Migrated our TeamCity CI/CD off a legacy AWS to a new one.
-- Redesigned our Federal CI/CD process 
+- Various migrations, from their custom CICD with Teamcity and artifact management to new accounts.
+- Redesigned our Federal CI/CD process.
+- Various cost savings improvements.
 - *Technologies*: TeamCity, AWX, Ansible, Linux, Python, Bash, IAM, Terraform, FedRamp
 
 #work(
