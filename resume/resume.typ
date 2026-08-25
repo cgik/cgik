@@ -33,7 +33,7 @@ I’m also a big fan of keeping things simple to allow for maximum flexibility. 
 - Built and improved release automation using TeamCity and GitHub Actions for Federal builds, artifact distribution, ECR workflows, S3 uploads, OVA/AMI releases, and documentation publishing.
 - Reduced infrastructure costs by 10,000/month through snapshot/storage optimization, alongside additional infrastructure cost-reduction work.
 - Documented release tooling and previously siloed operational knowledge to improve maintainability and knowledge transfer across teams.
-- *Technologies*: TeamCity, AWX, Ansible, Linux, Python, Bash, IAM, Terraform, FedRamp
+- *Technologies*: TeamCity, AWX, Ansible, Linux, Python, Bash, IAM, Terraform, FedRAMP
 
 #work(
   title: "Staff Platform Engineer",
@@ -55,22 +55,13 @@ I’m also a big fan of keeping things simple to allow for maximum flexibility. 
   company: "Oportun",
   dates: dates-helper(start-date: "Jun 2017", end-date: "Jun 2022"),
 )
-- Lead the architecture review meeting for cross-team collaboration and new initiatives.
-- Managed the architecture team's technical work to meet and exceed deadlines and requirements.
-- Designed our implementation for Kubernetes (EKS).
-- Worked alongside Data & AI team to design and introduce our own AI product (pre-GPT).
+Promoted from Jr. DevOps Engineer to DevOps Engineer to Senior DevOps Engineer
+- Led architecture reviews and cross-team technical initiatives, including managing the architecture team’s technical work.
+- Designed the company’s Kubernetes implementation on AWS EKS and worked with the Data & AI team to design and introduce an internal AI product.
+- Migrated applications from on-premises infrastructure to AWS and created a disaster recovery environment with a documented failover process.
+- Improved AWS architecture and automation across environments, including a 20% cost reduction in key environments and a 15% reduction in a 400+ EC2 development environment.
+- Coordinated production releases across product and engineering teams and debugged production issues across the full application stack.
 - *Technologies*: Kubernetes, Ansible, Jenkins, Linux, Python
-
-*DevOps Engineer* Oct 18 - Mar 2020
-- Migrated applications from on-prem to AWS, improving existing automation 
-- Created disaster recovery environment with failover playbook.
-- Migrated key environments within our AWS account to reduce costs by 20%.
-
-*Jr. DevOps Engineer* Jun 17 - Oct 18
-- Worked with development team to introduce new applications, meet security and scalability requirements.
-- Coordinated production deployments and releases between product and engineering teams.
-- Improved our Ansible and Jenkins managed development environment, consisting of 400+ EC2 instances, reduced AWS costs by 15% with architectural changes.
-- Triage production issues and debugging full application stack issues.
 
 == Projects
 #project(
