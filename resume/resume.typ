@@ -31,7 +31,7 @@ I’m also a big fan of keeping things simple to allow for maximum flexibility. 
 - Redesigned and stabilized the Federal release process, including installer workflows, golden/base-image creation with Packer, encrypted AMIs, LUKS/LVM configuration, and Rocky/RHEL deployment support.
 - Migrated legacy CI/CD and installer workflows into the R&D TeamCity environment while resolving build, artifact, release-tagging, and deployment issues across multiple release pipelines.
 - Built and improved release automation using TeamCity and GitHub Actions for Federal builds, artifact distribution, ECR workflows, S3 uploads, OVA/AMI releases, and documentation publishing.
-- Reduced infrastructure costs by $10,000/month through snapshot/storage optimization, alongside additional infrastructure cost-reduction work.
+- Reduced infrastructure costs by 10,000/month through snapshot/storage optimization, alongside additional infrastructure cost-reduction work.
 - Documented release tooling and previously siloed operational knowledge to improve maintainability and knowledge transfer across teams.
 - *Technologies*: TeamCity, AWX, Ansible, Linux, Python, Bash, IAM, Terraform, FedRamp
 
