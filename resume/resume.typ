@@ -17,10 +17,8 @@
   personal-info-position: left,
 )
 == Summary
-My bread and butter, and the thing that makes the biggest impact of value for the company is designing a release process that works for everyone in the company, 
-and I do mean everyone. A good release process can make or break a company's costs in head count, technical debt and business and developer satisfaction. I also
-am a big fan of keeping things simply to allow for maximum flexibility, I'm very tool agnostic and have a good track record of becoming an expert in anything that makes sense
-for the company to succeed.
+My bread and butter, and where I make the biggest impact for a company, is designing release processes that work for everyone in the company, and I do mean everyone. A good release process can make or break a company’s costs in headcount, technical debt, and both business and developer satisfaction.
+I’m also a big fan of keeping things simple to allow for maximum flexibility. I’m very tool-agnostic and have a good track record of quickly becoming an expert in whatever makes the most sense for the problem at hand
 
 == Work Experience
 
@@ -30,9 +28,11 @@ for the company to succeed.
   company: "Axonius",
   dates: dates-helper(start-date: "May 2025")
 )
-- Various migrations, from their custom CICD with Teamcity and artifact management to new accounts.
-- Redesigned our Federal CI/CD process.
-- Various cost savings improvements.
+- Redesigned and stabilized the Federal release process, including installer workflows, golden/base-image creation with Packer, encrypted AMIs, LUKS/LVM configuration, and Rocky/RHEL deployment support.
+- Migrated legacy CI/CD and installer workflows into the R&D TeamCity environment while resolving build, artifact, release-tagging, and deployment issues across multiple release pipelines.
+- Built and improved release automation using TeamCity and GitHub Actions for Federal builds, artifact distribution, ECR workflows, S3 uploads, OVA/AMI releases, and documentation publishing.
+- Reduced infrastructure costs by $10,000/month through snapshot/storage optimization, alongside additional infrastructure cost-reduction work.
+- Documented release tooling and previously siloed operational knowledge to improve maintainability and knowledge transfer across teams.
 - *Technologies*: TeamCity, AWX, Ansible, Linux, Python, Bash, IAM, Terraform, FedRamp
 
 #work(
@@ -79,5 +79,4 @@ for the company to succeed.
   role: "Owner",
   url: "tetrigo.net",
 )
-- Developed an online game based on the classic genre of game Puzzle League, written in TypeScript and React with Golang for the backend.
-- Hosted with Cloudflare pages and GCP Cloud Run.
+- Designed, developed, and operate an original online puzzle game inspired by the Puzzle League genre, owning the product from game mechanics and architecture through deployment and production operations.
