@@ -1,0 +1,27 @@
+tap "hashicorp/tap"
+
+# Editor and terminal
+brew "neovim"
+brew "tmux"
+
+# Search tools used by fzf-lua
+brew "fzf"
+brew "ripgrep"
+brew "fd"
+
+# Languages
+brew "go"
+brew "node"
+brew "typescript"
+
+# Terraform
+brew "hashicorp/tap/terraform"
+brew "hashicorp/tap/terraform-ls"
+
+# Language servers
+brew "pyright"
+brew "gopls"
+brew "typescript-language-server"
+brew "yaml-language-server"
+brew "bash-language-server"
+brew "shellcheck"
