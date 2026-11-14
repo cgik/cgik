@@ -26,6 +26,16 @@ vim.keymap.set('n', '<leader>f', '<cmd>FzfLua files<cr>')
 vim.keymap.set('n', '<leader>g', '<cmd>FzfLua live_grep<cr>')
 vim.keymap.set('n', '<leader>b', '<cmd>FzfLua buffers<cr>')
 
+vim.keymap.set('n', '<leader>e', '<cmd>Explore<cr>')
+
+vim.keymap.set('i', '<Tab>', function()
+  return vim.fn.pumvisible() == 1 and '<C-n>' or '<Tab>'
+end, { expr = true })
+
+vim.keymap.set('i', '<S-Tab>', function()
+  return vim.fn.pumvisible() == 1 and '<C-p>' or '<S-Tab>'
+end, { expr = true })
+
 -- Language servers: each is a command, filetypes, and project root markers
 vim.lsp.config('terraformls', {
   cmd = { 'terraform-ls', 'serve' },
@@ -75,6 +85,9 @@ vim.lsp.config('bashls', {
 
 vim.lsp.enable({ 'terraformls', 'pyright', 'gopls', 'ts_ls', 'yamlls', 'bashls' })
 
+vim.o.autocomplete = true
+vim.opt.complete:append('o')
+
 -- Per-buffer setup once a server attaches
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)
@@ -99,3 +112,25 @@ vim.g.clipboard = {
 }
 
 vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+y')
+
+-- File watching is off by default on Linux; without it servers miss files created after startup
+vim.lsp.config('*', {
+  capabilities = {
+    workspace = {
+      didChangeWatchedFiles = { dynamicRegistration = true },
+    },
+  },
+})
+
+
+-- Syntax
+vim.pack.add({ 'https://github.com/nvim-treesitter/nvim-treesitter' })
+
+local highlighted_filetypes = { 'python', 'go', 'terraform', 'typescript', 'javascript', 'yaml', 'bash' }
+
+require('nvim-treesitter').install({ 'python', 'go', 'hcl', 'terraform', 'typescript', 'javascript', 'yaml', 'bash' })
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = highlighted_filetypes,
+  callback = function() vim.treesitter.start() end,
+})
