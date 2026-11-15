@@ -28,6 +28,10 @@ vim.keymap.set('n', '<leader>b', '<cmd>FzfLua buffers<cr>')
 
 vim.keymap.set('n', '<leader>e', '<cmd>Explore<cr>')
 
+vim.o.autocomplete = true
+vim.opt.complete:append('o')
+vim.o.autocompletedelay = 300
+
 vim.keymap.set('i', '<Tab>', function()
   return vim.fn.pumvisible() == 1 and '<C-n>' or '<Tab>'
 end, { expr = true })
@@ -84,9 +88,6 @@ vim.lsp.config('bashls', {
 })
 
 vim.lsp.enable({ 'terraformls', 'pyright', 'gopls', 'ts_ls', 'yamlls', 'bashls' })
-
-vim.o.autocomplete = true
-vim.opt.complete:append('o')
 
 -- Per-buffer setup once a server attaches
 vim.api.nvim_create_autocmd('LspAttach', {
