@@ -22,15 +22,13 @@ vim.pack.add({
   'https://github.com/ibhagwan/fzf-lua',
 })
 
+-- Keybinds
 vim.keymap.set('n', '<leader>f', '<cmd>FzfLua files<cr>')
 vim.keymap.set('n', '<leader>g', '<cmd>FzfLua live_grep<cr>')
 vim.keymap.set('n', '<leader>b', '<cmd>FzfLua buffers<cr>')
 
 vim.keymap.set('n', '<leader>e', '<cmd>Explore<cr>')
-
-vim.o.autocomplete = true
-vim.opt.complete:append('o')
-vim.o.autocompletedelay = 300
+vim.keymap.set({ 'n', 'v' }, '<leader>=', vim.lsp.buf.format)
 
 vim.keymap.set('i', '<Tab>', function()
   return vim.fn.pumvisible() == 1 and '<C-n>' or '<Tab>'
@@ -99,6 +97,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = args.buf })
   end,
 })
+
+-- Lsp menu configs
+vim.o.autocomplete = true
+vim.opt.complete:append('o')
+vim.o.autocompletedelay = 700
 
 -- Copy through the terminal (OSC 52) so yanks reach the clipboard of the machine you're typing on.
 -- Windows Terminal can't answer OSC 52 paste requests, so paste reads Neovim's own register.
