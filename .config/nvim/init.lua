@@ -85,7 +85,7 @@ vim.lsp.config('bashls', {
   root_markers = { '.git' },
 })
 
-vim.lsp.enable({ 'terraformls', 'pyright', 'gopls', 'ts_ls', 'yamlls', 'bashls' })
+vim.lsp.enable({ 'terraformls', 'pyright', 'gopls', 'ts_ls', 'yamlls', 'bashls', 'ruff' })
 
 -- Per-buffer setup once a server attaches
 vim.api.nvim_create_autocmd('LspAttach', {
@@ -137,4 +137,10 @@ require('nvim-treesitter').install({ 'python', 'go', 'hcl', 'terraform', 'typesc
 vim.api.nvim_create_autocmd('FileType', {
   pattern = highlighted_filetypes,
   callback = function() vim.treesitter.start() end,
+})
+
+vim.lsp.config('ruff', {
+  cmd = { 'ruff', 'server' },
+  filetypes = { 'python' },
+  root_markers = { 'pyproject.toml', 'ruff.toml', '.git' },
 })
